@@ -1,0 +1,55 @@
+/* =============================  JOIN TOURNAMENT ============================= */
+
+.alias-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.alias-label {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	color: #e3b97d;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+}
+
+.alias-input {
+	background-color: #0b0505;
+	color: #d8c49c;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 1.25rem;
+	border: none;
+	padding: 0.4rem 0.8rem;
+	width: 200px;
+	text-align: center;
+}
+
+.alias-input:focus {
+	outline: 2px solid #56075f;
+	outline-offset: 2px;
+}
+
+.alias-error {
+	color: #e35b5b;
+	font-size: 0.9rem;
+	margin-top: 0.3rem;
+	text-align: center;
+}
+
+.join-button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.join-button {
+	background: none;
+	border: none;
+	color: #d8c49c;
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: bold;
+	font-size: 1.4rem;
+	cursor: pointer;
+}

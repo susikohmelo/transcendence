@@ -1,0 +1,34 @@
+{
+  "name": "ft_transcendance",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run start-game\" \"next dev\"",
+    "build": "next build",
+    "lint": "next lint",
+    "start": "concurrently --kill-others \"npm run start-game\" \"npm run start-front\"",
+    "start-game": "node game-server.js",
+    "start-front": "next start"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.0.0",
+    "@fastify/cors": "^11.0.1",
+    "@fastify/websocket": "^11.0.2",
+    "@types/react": "19.1.2",
+    "@types/three": "^0.176.0",
+    "concurrently": "^7.6.0",
+    "fastify": "^5.3.2",
+    "next": "^15.3.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.23"
+  }
+}

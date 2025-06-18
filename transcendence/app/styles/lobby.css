@@ -1,0 +1,106 @@
+/* =============== TOURNAMENT LOBBY ===================================== */
+
+.join-game-button,
+.create-game-button {
+	background: none;
+	border: none;
+	color: #d8c49c;
+	font-weight: bold;
+	font-size: 1.4rem;
+	font-family: "Roboto Condensed", sans-serif;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+}
+
+.tournament-column {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 1rem;
+	border-radius: 10px;
+	margin-right: 2rem;
+	margin-top: 1.5rem;
+	height: 340px;
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tournament-header-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+	color: #d8c49c;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.tournament-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+	color: #d526ac;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.9rem;
+}
+
+.tournament-header-row span,
+.tournament-row span {
+	flex: 1;
+	text-align: left;
+}
+
+.tournament-table-wrapper {
+	flex: 1;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	padding-right: 8px;
+	scrollbar-gutter: stable;
+	scrollbar-width: thin;
+	scrollbar-color: #d8c49c transparent;
+}
+
+.tournament-header-row span:nth-child(2),
+.tournament-row span:nth-child(2) {
+	text-align: center;
+}
+
+.tournament-header-row span:nth-child(3),
+.tournament-row span:nth-child(3) {
+	text-align: center;
+}
+
+.tournament-row {
+	border-radius: 4px;
+	transition: background-color 0.2s ease;
+}
+
+.tournament-row:hover {
+	background-color: rgba(41, 5, 55, 0.829);
+}
+
+.tournament-row.selected {
+	background-color: rgba(56, 25, 73, 0.882);
+	font-weight: bold;
+	color: #d8c49c;
+}
+
+.tournament-actions {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 0.75rem;
+}
+
+.tournament-lobby-content {
+	color: #d8c49c;
+	font-size: 1.1rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	margin-top: 20px;
+	line-height: 2rem;
+}

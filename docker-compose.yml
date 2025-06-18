@@ -1,0 +1,33 @@
+services:
+  transcendence:
+    build:
+      context: ./transcendence
+      args:
+        - CRED_PATH=${CRED_PATH}
+        - CRED_CERT=${CRED_CERT}
+        - CRED_KEY=${CRED_KEY}
+        - COUNTRY=${COUNTRY}
+        - STATE=${STATE}
+        - LOCALITY=${LOCALITY}
+        - ORGANIZATION=${ORGANIZATION}
+        - ORG_UNIT=${ORG_UNIT}
+        - COMMON_NAME=${COMMON_NAME}
+    volumes:
+      - ./db-data:/app/data
+    container_name: transcendence
+    ports:
+      - "8000:8000"      # Nginx
+      - "8080:8080"    # Nginx
+    env_file:
+      - .env
+    restart: on-failure
+    command: ["./start.sh"]
+    networks:
+      - default
+
+volumes:
+  db-data:
+
+networks:
+  default:
+    driver: bridge

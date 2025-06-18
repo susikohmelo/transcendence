@@ -1,0 +1,73 @@
+html,
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #0f0411;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.background-sphere {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 220vmin;
+	height: 220vmin;
+	min-width: 1000px;
+	min-height: 1000px;
+	transform: translate(-50%, -50%);
+	background: radial-gradient(circle, rgb(56, 4, 67) 0%, transparent 50%);
+	border-radius: 50%;
+	z-index: 0;
+}
+
+#renderCanvas {
+	width: 100%;
+	touch-action: none;
+	z-index: 2;
+}
+
+/*
+
+nav li {
+	display: block;
+	float: left;
+	padding: 16px;
+	margin-right: 16px;
+}
+
+*/
+
+nav::after {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+	align-items: center;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+.noselect {
+	user-select: none; /* Prevent text selection */
+	-webkit-user-drag: none; /* Prevent dragging in Safari/Chrome */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default; /* Optional: override cursor if needed */
+}
+
+.bold {
+	font-weight: bold;
+}

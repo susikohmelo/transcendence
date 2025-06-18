@@ -1,0 +1,62 @@
+/* Navi.css */
+
+.nav {
+	display: flex;
+	justify-content: center;
+	/* padding: 1rem; */
+	/* border: 2px solid red; /* debug border */
+	width: 1080px;
+	height: 120px;
+	top: 50px;
+	left: 0;
+	/* position: absolute;  */
+	margin: 0 auto;
+	z-index: 10;
+}
+
+.nav-inner {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*border: 2px solid blue; /* debug border, optional */
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: #d8c49c;
+	font-size: 1.5rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+.nav-links:hover {
+	color: #fff;
+}
+
+.nav-button {
+	text-decoration: none;
+	color: #d8c49c;
+	background: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 1.25rem;
+	padding: 0.5rem 1.5rem;
+	border: 2px solid transparent;
+	border-radius: 9999px;
+	transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+	border-color: #ff00ff;
+	background-color: rgba(255, 0, 255, 0.1);
+	color: #ffffff;
+}
+
+.nav-logo {
+	margin-top: 60px;
+	width: 50%; /* or any other relative unit */
+	height: auto;
+}

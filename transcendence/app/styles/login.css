@@ -1,0 +1,39 @@
+.login-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.login-box form {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 0.5em 1em;
+	gap: 0.5em;
+}
+
+.login-box ul {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1em;
+}
+
+.login-box ul li {
+	list-style: none;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.login-box button {
+	margin-top: 1em;
+	padding: 0.5em;
+}

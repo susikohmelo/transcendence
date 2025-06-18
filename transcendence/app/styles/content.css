@@ -1,0 +1,180 @@
+.content {
+	width: 880px;
+	height: 550px;
+	margin: 50px auto 0 auto;
+	display: flex;
+	top: 0px;
+	background: rgb(0, 0, 0, 0.4);
+	position: relative;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	padding-top: 0px;
+	padding: 0px;
+}
+
+.content-line {
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(
+		to right,
+		rgba(227, 230, 131, 0) 0%,
+		rgba(227, 230, 131, 0.8) 48%,
+		rgba(227, 230, 131, 0.8) 52%,
+		rgba(227, 230, 131, 0) 100%
+	);
+}
+
+.content-body {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-body-welcome {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-header {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: #d8c49c;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.content-columns {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	width: 100%;
+}
+
+.column {
+	align-items: center;
+
+	flex: 1;
+	color: #d8c49c;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 2.4;
+	box-sizing: border-box;
+}
+
+/* ================= cta ====================== */
+
+.cta-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: "Roboto Condensed", sans-serif;
+	padding: 1.5rem 30px 1.5rem 30px;
+
+	width: 250px;
+
+	font-weight: 700;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+
+	margin-left: 2.5rem;
+	text-decoration: none;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: black;
+	color: white;
+}
+
+.arrow-icon {
+	width: 40px;
+	height: auto;
+	filter: invert(0);
+	transition:
+		transform 0.3s ease,
+		filter 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+	transform: translateX(15px);
+	filter: invert(1);
+}
+
+.con-title {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	font-size: 3.2rem;
+	color: #d8c49c;
+	text-align: left;
+	margin-bottom: 40px;
+	/* margin-left: 2.5rem; */
+	padding-left: 2.5rem;
+	line-height: 1.1;
+}
+
+.footer-copy {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	font-size: 0.8rem;
+	color: #d8c49c;
+	line-height: 1.1;
+	margin-bottom: 40px;
+
+	margin-left: auto;
+	padding-right: 0.5rem;
+	text-align: right;
+}
+
+.footer-fine {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 700;
+	font-size: 0.8rem;
+	color: #565654;
+	line-height: 1.1;
+	margin-bottom: 40px;
+	margin-left: 0.5rem;
+	text-align: left;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	width: 1080px;
+	height: 120px;
+	top: 50px;
+	left: 0;
+	margin: 0 auto;
+	padding-top: 8px;
+	z-index: 5;
+}
+
+.footer-content {
+	width: 880px;
+	display: flex;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	z-index: 5;
+}
+
+.playerKeys {
+	margin-top: 20px;
+	height: auto;
+}

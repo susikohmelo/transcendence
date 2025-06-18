@@ -1,0 +1,16 @@
+services:
+  pong_compile:
+    container_name: pong_compile
+    build:
+      context: pong_compile/.
+      args:
+        MODE: $MODE
+    volumes:
+                  - pong_root:/pong
+volumes:
+  pong_root:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${PWD}/
